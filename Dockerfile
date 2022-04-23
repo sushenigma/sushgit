@@ -1,4 +1,3 @@
-# syntax=docker/dockerfile:1
-FROM scratch
-ADD hello /
-CMD ["/hello"]
+FROM busybox
+COPY /hello /
+RUN cat /hello
